@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TouchPoint Care
 
-## Getting Started
+TouchPoint Care is a marketing landing page for an electronic health record (EHR) platform concept designed for senior living communities. The page introduces the product and its focus on resident information, wellness coordination, and reporting for care teams.
 
-First, run the development server:
+## Landing Page
+
+The homepage includes:
+
+- Product introduction and demo calls to action
+- Senior-living EHR messaging and platform highlights
+- Resident wellness coordination and reporting content
+- Responsive layouts for desktop and mobile
+
+This project currently provides the marketing page only. Demo calls to action use email links; there is no connected lead form or EHR application backend.
+
+## Run Locally
+
+Requirements: Node.js and pnpm.
+
+Install dependencies and start the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev      # Start the development server
+pnpm lint     # Run ESLint
+pnpm build    # Create a production build
+pnpm start    # Serve the production build
+```
 
-## Learn More
+## Main Files
 
-To learn more about Next.js, take a look at the following resources:
+- `app/page.tsx` contains the landing page content and sections.
+- `app/globals.css` contains the global styles, color palette, and responsive page styling.
+- `app/layout.tsx` contains the shared document layout and page metadata.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site is built with Next.js, React, TypeScript, and Tailwind CSS.
