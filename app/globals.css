@@ -132,6 +132,19 @@ main {
   color: var(--primary);
 }
 
+.download-platforms {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 4px;
+}
+
+.download-platforms img {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
 .header-cta:hover {
   background: var(--primary);
   color: white;
@@ -586,7 +599,9 @@ h2 {
   .brand-name { font-size: 18px; }
   .brand-mark { width: 23px; height: 23px; }
   .main-nav { display: none; }
-  .header-cta { min-height: 40px; padding: 0 12px; gap: 8px; font-size: 12px; }
+  .header-cta { min-height: 40px; padding: 0 8px; gap: 4px; font-size: 11px; }
+  .header-cta .download-platforms { gap: 2px; }
+  .header-cta .download-platforms img { width: 11px; height: 11px; }
   .hero { padding: 52px 0 48px; grid-template-columns: 1fr; gap: 34px; }
   h1 { max-width: 500px; font-size: clamp(52px, 14vw, 72px); }
   .hero-description { max-width: 440px; font-size: 15px; }

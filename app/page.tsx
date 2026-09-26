@@ -1,3 +1,16 @@
+import Image from "next/image";
+
+function PlatformIcons() {
+  return (
+    <span className="download-platforms" aria-hidden="true">
+      <Image src="https://cdn.simpleicons.org/windows/435030" alt="" width={14} height={14} unoptimized />
+      <Image src="https://cdn.simpleicons.org/apple/435030" alt="" width={14} height={14} unoptimized />
+      <Image src="https://cdn.simpleicons.org/linux/435030" alt="" width={14} height={14} unoptimized />
+      <Image src="https://cdn.simpleicons.org/android/435030" alt="" width={14} height={14} unoptimized />
+    </span>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -11,7 +24,7 @@ export default function Home() {
           <a href="#how-it-works">How it works</a>
           <a href="#about">About us</a>
         </nav>
-        <a className="header-cta" href="mailto:hello@touchpointcare.com">Download <span aria-hidden="true">↗</span></a>
+        <a className="header-cta" href="mailto:hello@touchpointcare.com" aria-label="Free Download for Windows, macOS, Linux, Android, and iOS">Free Download <PlatformIcons /><span aria-hidden="true">↗</span></a>
       </header>
 
       <section className="hero" id="top">
@@ -20,8 +33,8 @@ export default function Home() {
           <h1>Smarter, AI-Driven,<em>Care for Seniors.</em></h1>
           <p className="hero-description">An EHR platform designed for the next generation of senior living residents and the teams who support them.</p>
           <div className="hero-actions">
-            <a className="button button-dark" href="mailto:hello@touchpointcare.com">Download <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="#platform">Explore the platform <span aria-hidden="true">↓</span></a>
+            <a className="button button-dark" href="mailto:hello@touchpointcare.com" aria-label="Free Download for Windows, macOS, Linux, Android, and iOS">Free Download <PlatformIcons /><span aria-hidden="true">↗</span></a>
+            <a className="text-link" href="#platform">Watch video demonstration <span aria-hidden="true">↓</span></a>
           </div>
           <div className="hero-note">
             <div className="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span></div>
@@ -83,8 +96,8 @@ export default function Home() {
       </section>
 
       <section className="closing-cta" id="about">
-        <div><p className="eyebrow">A trusted partner in senior living</p><h2>Support better care<br />with <em>better insight.</em></h2></div>
-        <a className="button button-light" href="mailto:hello@touchpointcare.com">Download <span aria-hidden="true">↗</span></a>
+        <div><p className="eyebrow">A trusted partner in senior living care</p><h2>Support better care<br />with <em>better insights.</em></h2></div>
+        <a className="button button-light" href="mailto:hello@touchpointcare.com" aria-label="Free Download for Windows, macOS, Linux, Android, and iOS">Free Download <PlatformIcons /><span aria-hidden="true">↗</span></a>
       </section>
 
       <footer className="site-footer">
