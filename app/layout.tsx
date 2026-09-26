@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EHR for Senior Living | TouchPointCare",
+  title: "EHR for Senior Living | TouchPointEHR",
   description: "Intelligent care coordination for senior living.",
 };
 

@@ -1,40 +1,30 @@
-import Image from "next/image";
-
-function PlatformIcons() {
-  return (
-    <span className="download-platforms" aria-hidden="true">
-      <Image src="https://cdn.simpleicons.org/windows/435030" alt="" width={14} height={14} unoptimized />
-      <Image src="https://cdn.simpleicons.org/apple/435030" alt="" width={14} height={14} unoptimized />
-      <Image src="https://cdn.simpleicons.org/linux/435030" alt="" width={14} height={14} unoptimized />
-      <Image src="https://cdn.simpleicons.org/android/435030" alt="" width={14} height={14} unoptimized />
-    </span>
-  );
-}
+import DownloadButton from "./DownloadButton";
+import VideoButton from "./VideoButton";
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="TouchPoint Care home">
+        <a className="brand" href="#top" aria-label="TouchPointEHR home">
           <span className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></span>
-          <span className="brand-name">touchpoint<span>care</span></span>
+          <span className="brand-name">touchpoint<span> EHR™</span></span>
         </a>
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#platform">Platform</a>
           <a href="#how-it-works">How it works</a>
-          <a href="#about">About us</a>
+          <a href="/about">About us</a>
         </nav>
-        <a className="header-cta" href="mailto:hello@touchpointcare.com" aria-label="Free Download for Windows, macOS, Linux, Android, and iOS">Free Download <PlatformIcons /><span aria-hidden="true">↗</span></a>
+        <DownloadButton variant="header" />
       </header>
 
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span className="eyebrow-dot" /> EHR for senior living</p>
-          <h1>Smarter, AI-Driven,<em>Care for Seniors.</em></h1>
+          <h1>Smarter, AI-Driven,<em>Care for Senior Living.</em></h1>
           <p className="hero-description">An EHR platform designed for the next generation of senior living residents and the teams who support them.</p>
           <div className="hero-actions">
-            <a className="button button-dark" href="mailto:hello@touchpointcare.com" aria-label="Free Download for Windows, macOS, Linux, Android, and iOS">Free Download <PlatformIcons /><span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="#platform">Watch video demonstration <span aria-hidden="true">↓</span></a>
+            <DownloadButton variant="dark" />
+            <VideoButton />
           </div>
           <div className="hero-note">
             <div className="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span></div>
@@ -43,10 +33,10 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Caregiver sharing a moment with a senior living resident">
           <div className="image-wash" />
-          <div className="visual-label"><span className="live-dot" /> A more connected care experience</div>
+          <div className="visual-label"><span className="live-dot" /> A more informed care experience</div>
           <div className="care-note">
             <div className="care-note-icon" aria-hidden="true">♥</div>
-            <div><strong>Resident-centered care</strong><span>Important details, in one place.</span></div>
+            <div><strong>Intelligent care coordination for patients.</strong><span>Important details, in one place.</span></div>
             <span className="note-arrow" aria-hidden="true">↗</span>
           </div>
           <span className="visual-caption">A clearer view of every resident’s care.</span>
@@ -54,10 +44,10 @@ export default function Home() {
       </section>
 
       <section className="trust-strip" aria-label="TouchPoint benefits">
-        <p>Purpose-built for senior living.<br /><strong>Focused on total wellness.</strong></p>
-        <div className="trust-stat"><strong>Resident</strong><span>care coordination</span></div>
-        <div className="trust-stat"><strong>Team</strong><span>communication</span></div>
-        <div className="trust-stat"><strong>Real-time</strong><span>operational insight</span></div>
+        <p>Healthcare software that integrates care, billing, and operations.<br /><strong>Purposely-built to grow your business.</strong></p>
+        <div className="trust-stat"><strong>Hospitals & ER Departments</strong><span>care coordination</span></div>
+        <div className="trust-stat"><strong>Nursing Homes</strong><span>communication</span></div>
+        <div className="trust-stat"><strong>Assisted Living Facilities</strong><span>operational insight</span></div>
       </section>
 
       <section className="platform-section" id="platform">
@@ -91,22 +81,22 @@ export default function Home() {
           <p className="eyebrow">Personalized wellness coordination</p>
           <h2>Actionable,<br /><em>Reporting Dashboards.</em></h2>
           <p>Bring resident information and team communication closer together, so care teams can respond to changing needs with clarity.</p>
-          <a className="text-link" href="mailto:hello@touchpointcare.com">Explore EHR for senior living <span aria-hidden="true">↗</span></a>
+          <a className="text-link" href="mailto:hello@touchpointehr.com">Explore EHR for senior living <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 
       <section className="closing-cta" id="about">
-        <div><p className="eyebrow">A trusted partner in senior living care</p><h2>Support better care<br />with <em>better insights.</em></h2></div>
-        <a className="button button-light" href="mailto:hello@touchpointcare.com" aria-label="Free Download for Windows, macOS, Linux, Android, and iOS">Free Download <PlatformIcons /><span aria-hidden="true">↗</span></a>
+        <div><p className="eyebrow">The trusted software for senior living care</p><h2>Support better care<br />with <em>better insights.</em></h2></div>
+        <DownloadButton variant="light" />
       </section>
 
       <footer className="site-footer">
-        <a className="brand" href="#top" aria-label="TouchPoint Care home">
+        <a className="brand" href="#top" aria-label="TouchPoint EHR home">
           <span className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></span>
-          <span className="brand-name">touchpoint<span>care</span></span>
+          <span className="brand-name">touchpoint<span> EHR™</span></span>
         </a>
-        <p>Thoughtful technology for better care.</p>
-        <span>© 2026 TouchPointCare. All rights reserved. TouchPointCare is a registered trademark.</span>
+        <p>Intelligent software for better care.</p>
+        <span>© 2026 TouchPoint EHR. All rights reserved. TouchPoint EHR is a registered trademark of TouchPoint Systems, Inc.</span>
       </footer>
     </main>
   );
