@@ -10,9 +10,10 @@ export default function Home() {
           <span className="brand-name">touchpoint<span> EHR™</span></span>
         </a>
         <nav className="main-nav" aria-label="Main navigation">
-          <a href="#platform">Platform</a>
-          <a href="#how-it-works">How it works</a>
           <a href="/about">About us</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#platform">Platform</a>
+          <a href="/login">Login</a>
         </nav>
         <DownloadButton variant="header" />
       </header>

@@ -3,8 +3,8 @@ import Image from "next/image";
 import DownloadButton from "../DownloadButton";
 
 export const metadata: Metadata = {
-  title: "About Us | TouchPointEHR",
-  description: "Meet TouchPointEHR founder Sonny Motola and learn about the story behind our senior living EHR.",
+  title: "About Us | TouchPoint EHR",
+  description: "Meet TouchPointEHR founder Gavin Waako and learn about the story behind our senior living EHR.",
 };
 
 export default function AboutPage() {
@@ -19,6 +19,7 @@ export default function AboutPage() {
           <a href="/#platform">Platform</a>
           <a href="/#how-it-works">How it works</a>
           <a href="/about" aria-current="page">About us</a>
+          <a href="/login">Login</a>
         </nav>
         <DownloadButton variant="header" />
       </header>
@@ -41,18 +42,18 @@ export default function AboutPage() {
           <div className="founder-portrait-image">
             <Image
               src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=85"
-              alt="Illustrative portrait placeholder, not a photo of Sonny Motola"
+              alt="Illustrative portrait placeholder, not a photo of Gavin Waako"
               width={700}
               height={840}
               unoptimized
             />
           </div>
-          <figcaption>Illustrative portrait placeholder. Replace with Sonny Motola’s approved photo.</figcaption>
+          <figcaption>Illustrative portrait placeholder. Replace with Gavin Waako’s approved photo.</figcaption>
         </figure>
         <div className="founder-story">
-          <p className="eyebrow">Founder &amp; software engineer</p>
-          <h2>Meet Sonny<br /><em>Motola.</em></h2>
-          <p className="founder-intro">Sonny came to the United States from Uganda as an international student and studied computer science at a community college.</p>
+          <p className="eyebrow">CEO, Founder &amp; software engineer</p>
+          <h2>Meet Gavin<br /><em>Waako.</em></h2>
+          <p className="founder-intro">Gavin came to the United States in January 2025 from Uganda as an international student, and studied Computer Science at MassBay Community College.</p>
           <p>That journey informs the perspective he brings to building TouchPointEHR: technology is most useful when it is accessible, practical, and shaped around the people who rely on it.</p>
           <p>He founded TouchPointEHR to focus that perspective on senior living, supporting care teams with tools for a clearer, more connected view of each resident.</p>
         </div>
